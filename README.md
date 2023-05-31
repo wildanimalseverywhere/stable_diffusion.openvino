@@ -21,6 +21,7 @@ Implementation of Text-To-Image generation using Stable Diffusion on Intel CPU o
 python -m pip install --upgrade pip
 pip install openvino-dev[onnx,pytorch]==2022.3.0
 pip install -r requirements.txt
+apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 ```
 
 ## Generate image from text description
