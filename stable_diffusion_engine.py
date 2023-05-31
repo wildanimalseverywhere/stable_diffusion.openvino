@@ -27,6 +27,7 @@ class StableDiffusionEngine:
         self.scheduler = scheduler
         # models
         self.core = Core()
+        self.core.set_property("CPU", {"INFERENCE_NUM_THREADS": 8})
         self.core.set_property({'CACHE_DIR': './cache'})
 
         # text features
